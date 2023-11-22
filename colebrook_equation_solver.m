@@ -20,8 +20,8 @@ Re = 2.19E5;
 f = 0.02;
 
 % converge
-f0 = f
-errorLimit = 1e-6
+f0 = f;
+errorLimit = 1e-6;
 while (abs(f-f0) > errorLimit)
     f = (-2.0*log10( ( (e/D)/3.7) + (2.51/(Re*sqrt(f)) ) ))^-2; 
 end
